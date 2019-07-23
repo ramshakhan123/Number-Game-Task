@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#instructions {
+    background-color: darkseagreen;
+    width: 50%;
+    position: absolute;
+    left: 24%;
+    top: 10%;
+}

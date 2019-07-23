@@ -1,0 +1,150 @@
+body {
+    background-image: url("capture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+h1 {
+    font-family: cursive;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+
+.number-game {
+    display: inline-grid;
+    position: fixed;
+    top: 33%;
+    left: 55%;
+}
+
+    
+.number-game button {
+    margin-bottom: 10px;
+    padding: 20px 90px 20px 90px;
+    border-radius: 17px;
+    border: none;
+    font-size: 2rem;
+    color: papayawhip;
+}
+
+button:nth-child(1) {
+    background-color: darkgreen;
+}
+
+button:nth-child(1):hover {
+    background-color: lightgreen;
+}
+
+button:nth-child(2) {
+    background-color: brown;
+}
+
+button:nth-child(2):hover {
+    background-color: lightsalmon;
+}
+
+button:nth-child(3) {
+    background-color: darkslategrey;
+}
+
+button:nth-child(3):hover {
+    background-color: lightgray;
+}
+
+a {
+    font-size: 1.9rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: blue;
+
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 1.4rem;
+    margin: 0;
+    }
+    .number-game {
+        top: 10%;
+        left: 45%;
+    }
+    .number-game button {
+        font-size: 1.3rem;
+        padding:0;
+        width: 210px;
+        height: 40px;
+    }
+    a {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-left: 10px;
+}
+
+@media (max-width:375px) {
+    h1 {
+        font-size: 1.2rem;
+
+        }
+    .number-game {
+            top: 13%;
+        }
+    .number-game button {
+            width: 166px;
+        height: 33px;
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        }
+    a {
+        font-size: 1.2rem;
+        margin: 0;
+        }
+    }
+    
+}
+
+#easy-game-area, #medium-game-area, #hard-game-area {
+    position: absolute;
+    left: 32%;
+    top: 30%;
+    display: none;
+}
+
+#userGuessNumber {
+    padding: 40px 100px;
+    border: none;
+    border-radius: 20px;
+    background-color: khaki;
+    color: white;
+    outline: none;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#easy-game-area button, #medium-game-area button, #hard-game-area button {
+    display: block;
+    padding: 20px 60px;
+    font-size: 1.9rem;
+    border: none;
+    border-radius: 10px;
+    background-color: palevioletred; 
+    margin-left: 30%;
+    margin-top: 10%;
+
+} 
+
+@media (max-width:600px) {
+    #easy-game-area, #medium-game-area, #hard-game-area{
+    left: 40%;
+    top: 13%;
+    }
+    #userGuessNumber {
+        padding: 20px 5px;
+    font-size: 1.1rem;
+    }
+    #easy-game-area button, #medium-game-area button, #hard-game-area button {
+        margin-left: 15%;
+    padding: 26px 20;
+    font-size: 1rem;
+    }
+}
