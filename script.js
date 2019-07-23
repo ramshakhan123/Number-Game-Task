@@ -2,6 +2,8 @@ let numberGame = document.querySelector(".number-game");
 let easyGameArea = document.querySelector("#easy-game-area");
 let mediumGameArea = document.querySelector("#medium-game-area");
 let hardGameArea = document.querySelector("#hard-game-area");
+    let computerNumber = parseInt(Math.random() * 50);
+
 
 
 function easy() {
@@ -10,7 +12,6 @@ function easy() {
 }
 
 function checkCorrectNumber() {
-    let computerNumber = parseInt(Math.random() * 50);
     let userInput = parseInt(document.querySelector("#userGuessNumber").value);
     if (userInput > computerNumber) {
         alert("Too big");
