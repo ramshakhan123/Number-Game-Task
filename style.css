@@ -4,7 +4,7 @@ body {
     background-size: cover;
 }
     
-h1 {
+.main-heading {
     font-family: cursive;
     font-size: 2.3rem;
     text-align: center;
@@ -61,7 +61,7 @@ a {
 }
 
 @media (max-width:600px) {
-    h1 {
+    .main-heading {
         font-size: 1.4rem;
     margin: 0;
     }
@@ -82,7 +82,7 @@ a {
 }
 
 @media (max-width:375px) {
-    h1 {
+    .main-heading {
         font-size: 1.2rem;
 
         }
@@ -105,7 +105,7 @@ a {
 
 #easy-game-area, #medium-game-area, #hard-game-area {
     position: absolute;
-    left: 32%;
+    left: 30%;
     top: 30%;
     display: none;
 }
@@ -130,6 +130,7 @@ a {
     background-color: palevioletred; 
     margin-left: 30%;
     margin-top: 10%;
+    outline: none;
 
 } 
 
@@ -146,5 +147,53 @@ a {
         margin-left: 15%;
     padding: 26px 20;
     font-size: 1rem;
+    }
+}
+
+#box, #box2, #box3 {
+    width: 40%;
+    position: absolute;
+    left: 29%;
+    top: 33%;
+    text-align: center;
+    background-color: white;
+    padding: 30px 0px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px black;
+    display: none;
+}
+
+#bg-color-blue-btn {
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: blue;
+    outline: none;
+}
+
+i {
+    color: #027c9d;
+    font-size: 50px;
+    border: 3px solid red;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+@media (max-width:600px) {
+    #box {
+        padding: 10px 0px;
+    width: 40%;
+    top: 12%;
+    }
+    i {
+        font-size: 20px;
+    padding: 5px;
+    }
+    #box h1 {
+        font-size: 20px;
+    }
+    #bg-color-blue-btn {
+        padding: 10px 20px;
     }
 }
