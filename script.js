@@ -11,7 +11,7 @@ function easy() {
 
 function checkCorrectNumber() {
     let computerNumber = parseInt(Math.random() * 50);
-    let userInput = document.querySelector("#userGuessNumber").value;
+    let userInput = parseInt(document.querySelector("#userGuessNumber").value);
     if (userInput > computerNumber) {
         alert("Too big");
     }else if (userInput < computerNumber) {
