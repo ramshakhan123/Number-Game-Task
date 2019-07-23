@@ -2,13 +2,16 @@ let numberGame = document.querySelector(".number-game");
 let easyGameArea = document.querySelector("#easy-game-area");
 let mediumGameArea = document.querySelector("#medium-game-area");
 let hardGameArea = document.querySelector("#hard-game-area");
-    let computerNumber = parseInt(Math.random() * 50);
 
+let numberForEach = 0;
+let computerNumber;
 
 
 function easy() {
     numberGame.style.display = "none";
     easyGameArea.style.display = "block";
+    numberForEach = 51;
+    computerNumber = parseInt(Math.random() * numberForEach);
 }
 
 function checkCorrectNumber() {
