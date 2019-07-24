@@ -63,7 +63,7 @@ a {
 @media (max-width:600px) {
     .main-heading {
         font-size: 1.4rem;
-    margin: 0;
+        margin: 0;
     }
     .number-game {
         top: 10%;
@@ -87,10 +87,10 @@ a {
 
         }
     .number-game {
-            top: 13%;
+        top: 13%;
         }
     .number-game button {
-            width: 166px;
+        width: 166px;
         height: 33px;
         font-size: 1.1rem;
         margin-bottom: 5px;
@@ -105,20 +105,21 @@ a {
 
 #easy-game-area, #medium-game-area, #hard-game-area {
     position: absolute;
-    left: 30%;
+    left: 27%;
     top: 30%;
     display: none;
 }
 
-#userGuessNumber {
+#userGuessNumber, #userGuessNumber2, #userGuessNumber3 {
     padding: 40px 100px;
     border: none;
     border-radius: 20px;
-    background-color: khaki;
-    color: white;
+    background-color: lightgreen;
+    color: darkcyan;
     outline: none;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     text-align: center;
+    font-weight: bold;
 }
 
 #easy-game-area button, #medium-game-area button, #hard-game-area button {
@@ -127,7 +128,7 @@ a {
     font-size: 1.9rem;
     border: none;
     border-radius: 10px;
-    background-color: palevioletred; 
+    background-color: gainsboro;; 
     margin-left: 30%;
     margin-top: 10%;
     outline: none;
@@ -136,17 +137,17 @@ a {
 
 @media (max-width:600px) {
     #easy-game-area, #medium-game-area, #hard-game-area{
-    left: 40%;
-    top: 13%;
+        left: 20%;
+        top: 13%;
     }
-    #userGuessNumber {
+    #userGuessNumber, #userGuessNumber2, #userGuessNumber3 {
         padding: 20px 5px;
-    font-size: 1.1rem;
+        font-size: 1.1rem;
     }
     #easy-game-area button, #medium-game-area button, #hard-game-area button {
         margin-left: 15%;
-    padding: 26px 20;
-    font-size: 1rem;
+        padding: 26px 20;
+        font-size: 1rem;
     }
 }
 
@@ -180,15 +181,22 @@ i {
     border-radius: 50px;
 }
 
+.fa-times {
+    border-radius:  40px;
+    color: red;
+    border-color: blueviolet;
+}
+
 @media (max-width:600px) {
-    #box {
+    #box, #box2, #box3 {
         padding: 10px 0px;
-    width: 40%;
-    top: 12%;
+        width: 60%;
+        top: 12%;
+        left: 20%;
     }
     i {
         font-size: 20px;
-    padding: 5px;
+        padding: 5px;
     }
     #box h1 {
         font-size: 20px;
